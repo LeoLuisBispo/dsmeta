@@ -1,12 +1,19 @@
 import { useState } from "react";
-import "./App.css";
 import NotificationButton from "./components/notificationButton";
+import Header from "./components/header";
+import SalesCard from "./components/salesCard";
 
 function App() {
   return (
     <div className="App">
-      <h1>niente</h1>
-      <NotificationButton />
+      <Header />
+      <main>
+        <section id="sales">
+          <div className="dsmeta-container">
+            <SalesCard />
+          </div>
+        </section>
+      </main>
     </div>
   );
 }
